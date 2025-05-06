@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { FaCartShopping } from "react-icons/fa6";
 import { MdMenu } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 
 const Navbar2nd = () => {
   const [menu, setMenu] = useState(false);
+  // handeling pages
+  const [handelpages, setHandelPages] = useState(false);
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-white shadow">
+    <div className="fixed top-0 left-0 w-full h-[98px] z-50 bg-white shadow">
       {/* Mobile Navbar */}
       <div className="flex justify-between md:hidden h-[69.2px] py-1.5 px-4">
         <button onClick={() => setMenu(!menu)}>
@@ -29,13 +32,28 @@ const Navbar2nd = () => {
         />
         <ul className="flex gap-6">
           <li>HOMEPAGES</li>
-          <li>PAGES</li>
+          <li className="relative group cursor-pointer">
+            PAGES
+            <div className="absolute top-full left-0 bg-white shadow-md rounded-md w-40 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300">
+              <nav className="flex flex-col p-2">
+                <NavLink to="/about" className="py-1 px-2 hover:bg-gray-100">
+                  About Us
+                </NavLink>
+                <NavLink to="/team" className="py-1 px-2 hover:bg-gray-100">
+                  Our Team{" "}
+                </NavLink>
+                <NavLink to="/team" className="py-1 px-2 hover:bg-gray-100">
+                  Contact Us
+                </NavLink>
+              </nav>
+            </div>
+          </li>
           <li>SHOP</li>
           <li>BLOG</li>
           <li>LONGBOOK</li>
           <li>ELEMENTS</li>
         </ul>
-        <ul className="flex gap-4">
+        <ul className="flex h-[full%] w-[156.8] gap-4">
           <li>
             <FaCartShopping />
           </li>
@@ -61,6 +79,7 @@ const Navbar2nd = () => {
           </ul>
         </div>
       )}
+      {/* handeling handelpages */}
     </div>
   );
 };
