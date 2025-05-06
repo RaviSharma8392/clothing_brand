@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "role": "Frontend Developer",
+    "bestSkill": "React & UI Design",
+    "achievement": "Led the redesign of the company dashboard",
+    "image": "https://satine.qodeinteractive.com/wp-content/uploads/2017/07/team-member-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Brian Lee",
+    "role": "Backend Developer",
+    "bestSkill": "Node.js & Database Optimization",
+    "achievement": "Optimized API response time by 60%",
+    "image": "https://satine.qodeinteractive.com/wp-content/uploads/2017/07/team-member-2.png"
+  },
+  {
+    "id": 3,
+    "name": "Chloe Smith",
+    "role": "Full Stack Developer",
+    "bestSkill": "End-to-end app development",
+    "achievement": "Built and deployed a full-stack app used by 10K+ users",
+    "image": "https://satine.qodeinteractive.com/wp-content/uploads/2017/07/team-member-3.png"
+  }
+]

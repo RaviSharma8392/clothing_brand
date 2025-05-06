@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Floral Maxi Dress",
+    "price": 79.99,
+    "description": "Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam",
+    "category": "Women",
+    "image": "https://satine.qodeinteractive.com/wp-content/uploads/2017/07/h1-product-1-600x723.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Slim Fit Blazer",
+    "price": 119.99,
+    "description": "Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam",
+    "category": "Men",
+    "image": "https://satine.qodeinteractive.com/wp-content/uploads/2017/07/h1-product-2-600x723.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Denim Jacket",
+    "price": 89.99,
+    "description": "Classic light-wash denim jacket.",
+    "category": "Unisex",
+    "image": "https://satine.qodeinteractive.com/wp-content/uploads/2017/07/h1-product-3-600x723.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Slim Fit Blazer",
+    "price": 119.99,
+    "description": "Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam",
+    "category": "Men",
+    "image": "https://satine.qodeinteractive.com/wp-content/uploads/2017/07/h1-product-2-600x723.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Denim Jacket",
+    "price": 89.99,
+    "description": "Classic light-wash denim jacket.",
+    "category": "Unisex",
+    "image": "https://satine.qodeinteractive.com/wp-content/uploads/2017/07/h1-product-3-600x723.jpg"
+  }
+]
