@@ -6,34 +6,26 @@ import { NavLink } from "react-router-dom";
 
 const Navbar2nd = () => {
   const [menu, setMenu] = useState(false);
-  // handeling pages
-  const [handelpages, setHandelPages] = useState(false);
 
   return (
-    <div className="fixed top-0 left-0 w-full h-[98px] z-50 bg-white shadow">
+    <div className="fixed md:px-16 font-[Open Sans] text-[13px] top-0 left-0 w-full h-[98px] z-50 bg-white border-b-2 border-[#ffd700]">
       {/* Mobile Navbar */}
       <div className="flex justify-between md:hidden h-[69.2px] py-1.5 px-4">
         <button onClick={() => setMenu(!menu)}>
           <MdMenu className="h-6 w-6" />
         </button>
-        <img
-          className="h-[41px] w-[161px]"
-          src="https://satine.qodeinteractive.com/wp-content/uploads/2017/08/logo-dark-img.png"
-          alt="Logo"
-        />
+        <h1 className="font-signature pt-2.5 items-center text-4xl">NARK</h1>
       </div>
 
       {/* Desktop Navbar */}
-      <div className="hidden md:flex justify-between items-center px-8 py-4">
-        <img
-          className="h-[41px] w-[161px]"
-          src="https://satine.qodeinteractive.com/wp-content/uploads/2017/08/logo-dark-img.png"
-          alt="Logo"
-        />
-        <ul className="flex gap-6">
-          <li>HOMEPAGES</li>
-          <li className="relative group cursor-pointer">
-            PAGES
+      <div className="hidden   font-semibold md:flex text-[13px] justify-between items-center px-8 py-4">
+        <h1 className="font-signature  text-4xl">NARK</h1>
+        <ul className="flex tracking-wide gap-6">
+          <li className="pr-[22px] hover:text-[#ffd700] ">
+            <NavLink to={"/"}>HOMEPAGES</NavLink>{" "}
+          </li>
+          <li className="relative group  hover:text-[#ffd700]  cursor-pointer">
+            PAGES{" "}
             <div className="absolute top-full left-0 bg-white shadow-md rounded-md w-40 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300">
               <nav className="flex flex-col p-2">
                 <NavLink to="/about" className="py-1 px-2 hover:bg-gray-100">
@@ -48,12 +40,12 @@ const Navbar2nd = () => {
               </nav>
             </div>
           </li>
-          <li>SHOP</li>
-          <li>BLOG</li>
-          <li>LONGBOOK</li>
-          <li>ELEMENTS</li>
+          <li className="hover:text-[#ffd700] ">SHOP </li>
+          <li className="hover:text-[#ffd700] "> BLOG </li>
+          <li className="hover:text-[#ffd700] ">LONGBOOK </li>
+          <li className="hover:text-[#ffd700] ">ELEMENTS </li>
         </ul>
-        <ul className="flex h-[full%] w-[156.8] gap-4">
+        <ul className="flex text-2xl  gap-4">
           <li>
             <FaCartShopping />
           </li>
@@ -68,7 +60,7 @@ const Navbar2nd = () => {
 
       {/* Mobile Sidebar */}
       {menu && (
-        <div className="fixed top-[69.2px] left-0 w-full bg-amber-400 md:hidden shadow px-4 py-2 rounded-b-xl">
+        <div className="fixed top-20 left-0 transparent bg-white  md:hidden shadow px-4 py-2 rounded-b-xl">
           <ul>
             <li className="py-2">HOMEPAGES</li>
             <li className="py-2">PAGES</li>
@@ -79,7 +71,6 @@ const Navbar2nd = () => {
           </ul>
         </div>
       )}
-      {/* handeling handelpages */}
     </div>
   );
 };

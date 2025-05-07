@@ -4,20 +4,14 @@ import teamData from "../../Data/teamData.json";
 export const OurTeam = () => {
   return (
     <div>
-      <div className="border md-px-100 m-7">
-        <h2>
-          {" "}
-          <strong className="md:text-[28px] ">
-            MEET OUR TEAM OF EXEPERTS
-          </strong>{" "}
-        </h2>
+      <div className="bg-[#000080] font-[Minion Pro] ">
+        <h1 className="text-center  uppercase p-5 border-b-2 border-[#ffd700] text-2xl font-bold text-[#cfd1d9] ">
+          Meet Our Team Of Experts
+        </h1>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-8 h-full md:grid-cols-3 ">
+      <div className="grid grid-cols-1 bg-white sm:grid-cols-2 sm:gap-8 h-full md:grid-cols-3 ">
         {teamData.map((item) => (
-          <div
-            className="shadow  rounded-2xl items-center h-full m-5 p-2"
-            key={item.id}
-          >
+          <div className=" items-center h-full m-5 p-2" key={item.id}>
             <img src={item.image} className="px-23 py-10 " alt={item.name} />
 
             <div className=" pl-7">

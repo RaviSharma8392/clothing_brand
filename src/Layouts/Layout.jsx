@@ -9,7 +9,6 @@ export const Layout = () => {
       <Navbar2nd />
       <main className="pt-[100px]">
         {" "}
-        {/* to offset the fixed navbar */}
         <Outlet />
       </main>
       <Footer />
