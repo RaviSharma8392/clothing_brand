@@ -3,7 +3,7 @@ import productData from "../Data/data1.json";
 import { OurTeam } from "../Pages/ChildPages/OurTeam";
 // import { Collection } from "./Collection";
 import Collection1st from "./Collection1st";
-import { StepsCreating } from "./imageSlide";
+import { StepsCreating } from "./StepsCreating";
 
 const Home = () => {
   return (
